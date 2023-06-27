@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.A {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: coral;
+        box-shadow: 10px 10px;
+      }
+      div.B {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: coral;
+        box-shadow: 10px 10px 5px lightblue;
+      }
+      div.C {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: coral;
+        box-shadow: 10px 10px 5px 12px lightblue;
+      }
+      div.D {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: coral;
+        box-shadow: 10px 10px 5px lightblue inset;
+      }
+      div.E {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: coral;
+        box-shadow: 5px 5px blue , 10px 10px red , 15px 15px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="A">A</div>  <!--the dafault color of the shadow is the current text color-->
+    </br>
+    <div class="B">B</div>  <!--specifying color and blur to shadow-->
+    </br>
+    <div class="C">C</div>  <!--set the spread radius of shadow. +ve value incr size and -ve value decr size of shadow-->
+    </br>
+    </br>
+    <div class="D">D</div>  <!--set inset parameter-->
+    </br>
+    <div class="E">E</div>  <!--aa multiple shadows-->
+    </br>
+  </body>
+</html>

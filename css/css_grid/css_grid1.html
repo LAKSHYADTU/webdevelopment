@@ -1,0 +1,120 @@
+<!--
+GRID :is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements.
+     :they help us to create layouts in which our element 
+     :css grid layout is a two dimensional layout system for web.
+     :it has many features that make building complex layout straightfoward.
+     :A grid have columns, rows, and gaps b/w rows and columns known as gutters.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .A {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      .B {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      .C {
+        display: grid;
+        row-gap:50px;   /*gap:50px 100px*/ /*gap:50px  (both row and column gap)*/
+        column-gap: 80px;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      .D {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      #d1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      #d2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .a,.b,.c,.d{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!--
+    DISPLAY :GRID.
+    -->
+    <div class="A">
+      <div class="a">a1</div>
+      <div class="a">a2</div>
+      <div class="a">a3</div>
+      <div class="a">a4</div>
+      <div class="a">a5</div>
+      <div class="a">a6</div>
+      <div class="a">a7</div>
+      <div class="a">a8</div>
+      <div class="a">a9</div>
+    </div>
+    <br>
+    
+
+    <!--
+    DISPLAY :INLINE GRID
+    -->
+    <div class="B">
+      <div class="b">b1</div>
+      <div class="b">b2</div>
+      <div class="b">b3</div>
+      <div class="b">b4</div>
+      <div class="b">b5</div>
+      <div class="b">b6</div>
+      <div class="b">b7</div>
+      <div class="b">b8</div>
+      <div class="b">b9</div>
+    </div>
+    <br>
+
+    <div class="C">
+        <div class="c">c1</div>
+        <div class="c">c2</div>
+        <div class="c">c3</div>  
+        <div class="c">c4</div>
+        <div class="c">c5</div>
+        <div class="c">c6</div>  
+        <div class="c">c7</div>
+        <div class="c">c8</div>
+        <div class="c">c9</div>  
+      </div>
+      <br>
+
+
+      <!--
+      GRID-LINES :
+      -->
+      <div class="D">
+        <div class="d" id="d1">d1</div>
+        <div class="d" id="d2">d2</div>
+        <div class="d">d3</div>  
+        <div class="d">d4</div>
+        <div class="d">d5</div>
+        <div class="d">d6</div>
+        <div class="d">d7</div>
+        <div class="d">d8</div>  
+      </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* Colors in css can be spcified using following method.
+
+1)HEXADECIMAL COLORS :EX: #RRGGBB where RR(red) ,GG(green) ,BB(blue).
+                     :hexadecimal int. specify the color. All values must be between 00 and FF.
+                     :ex :#ff0000 :Red ,#00ff00 :Green ,#0000ff :blue ,#000000 :black ,#ffffff :white.
+                     :#_ _ _ _ _ _ all values from 0 to f.
+
+2)RGB COLORS :RGB color value is specified with rgb() , which has following syntax :rgb(red , green , blue).
+             :each parameter has value 0 to 255.
+             :ex :rgb(255,0,0):red ,rgb(0,255,0):green ,rgb(0,0,255):blue ,rgb(256,256,256):white ,rgb(0,0,0):black.
+                   or rgb(0,0,0,opacity)
+
+3)PREDEFINED/CROSS-BROWSER COLOR NAMES :140 color names are predefines in html and css/             
+*/
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensions</title>
+    <style>
+    div.A {
+       max-height : 100px;
+       border :1px solid black;
+    }
+    div.B {
+       margin:10px;
+       min-height :100px;
+       border :1px solid black;
+    }
+    div.C {
+       margin:10px;
+       min-height :100px;
+       border :1px solid black;
+    }
+    
+    div.D{
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid;
+        overflow: visible;
+    }
+    div.E{
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid;
+        overflow: hidden;
+    }
+    div.F{
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid;
+        overflow: scroll;
+    }
+    div.G{
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid;
+        overflow: auto;
+    }
+    div.H{
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid;
+        overflow-x: scroll;
+        /* overflow-y: scroll; */
+    }
+    </style>
+</head>
+<body>
+    <!--
+    height,width :properties set the height and width of an element.
+    max-height :property set the maxm height of an element.
+               :if content can comes inside inside it then max height remain same otherwise overflow will occur.
+    max-width :property set the maxm width of an element
+    min-height :if content can comes inside inside it then min height remain same otherwise it will expand.
+
+    CSS HEIGHT AND WIDTH VALUES :
+    auto    :This is default. The browser calculates the height and width
+    length  :Defines the height/width in px, cm, etc.
+    %       :Defines the height/width in percent of the containing block
+    initial :Sets the height/width to its default value
+    inherit :The height/width will be inherited from its parent value
+    -->
+    <div class="A">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis omnis doloribus ullam fugiat doloremque nobis quas tempora harum, iure corrupti porro quisquam earum magnam magni sapiente nostrum quo! Nisi.sadsadasdasdasdasdsadLorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis omnis doloribus ullam fugiat doloremque nobis quas tempora harum, iure corrupti porro quisquam earum magnam magni sapiente nostrum quo! Nisi.sadsadasdasdasdasdsadLorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis omnis doloribus ullam fugiat doloremque nobis quas tempora harum, iure corrupti porro quisquam earum magnam magni sapiente nostrum quo! Nisi.sadsadasdasdasdasdsad</div>
+    </br>
+    <div class="B">Hello Jee</div>  <!--min-height remain same-->
+    <div class="C">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, eveniet laudantium cum rerum aliquam alias voluptatum totam dolore expedita, ab porro fuga corporis? Temporibus quis facilis ratione nobis sint facere natus necessitatibus debitis libero aperiam labore numquam doloribus magni veniam ipsum inventore omnis quod consectetur, illo unde dolores itaque? Ex ab dolorum, voluptas iure voluptatum ea voluptate rem ratione quibusdam. Id, porro rem. Ipsam autem ab inventore magni ex enim, placeat qui. Saepe fugit, provident cupiditate laboriosam in enim, est quod iure accusantium maiores ad molestiae asperiores officia temporibus aspernatur velit fugiat aliquam sapiente similique? Vero ipsam dolorem cum perspiciatis.</div>
+
+    <!--
+    OVERFLOW :property specify whether to clip the content or to add scrollbars when the content of an element is too big to fit in specified area.
+             :property only works for blocks elements with specified height.
+    Overflow has following values :
+    *visible :default .the overflow is not clipped .the content renders outside the element's box (bydefault).
+    *hidden :the overflow is clipped and rest of the content will be invisible.
+    *scroll :the overflow is clipped and scrollbar is added to the inside the box.
+            :this will add a scrollbar both horizontally and vertically (even if you don't need it).
+    *auto :similar to scroll ,but it adds scrollbars only when necessary.
+    -->
+    <div class="D">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    </br> </br> </br> </br>
+    <div class="E">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    </br>
+    <div class="F">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <br>
+    <div class="G">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+    <!--
+    overflow-x and overflow-y :properties change the overflow of content just horizontally or vertically or both.
+
+    -->
+    <br>
+    <div class="H">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+</body>
+</html>

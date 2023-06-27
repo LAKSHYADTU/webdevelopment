@@ -1,0 +1,59 @@
+<!--
+width + padding + border = actual width of an element
+height + padding + border = actual height of an elemen
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+}
+
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .div1 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid blue;
+      }
+
+      .div2 {
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        border: 1px solid red;
+      }
+      .div3 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+      }
+
+      .div4 {
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        border: 1px solid red;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!--without box-sizing-->
+    <div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+    <br />
+    <div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+    <br>
+
+    <!--with box-sizing :property allow us to include padding and border in an element's total width and height.
+                        :border-box :value on an element, padding and border are incldue.-->
+    <div class="div3">Both divs are the same size now!</div>
+    <br>
+    <div class="div4">Hooray!</div>
+</body>
+</html>

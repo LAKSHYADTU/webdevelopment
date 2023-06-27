@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.A{
+        border: 1px solid black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        background-color: lightblue;
+      }
+      div.B{
+        border: 1px solid black;
+        width: 300px;
+        margin: 25px 100px 75px 100px;
+        background-color: lightblue;
+      }
+      div.C{
+        border: 1px solid black;
+        width: 300px;
+        margin: auto;  /*to horizontally center the element within its container*/
+        background-color: lightblue;
+      }
+      div.D{
+        border: 1px solid red;
+        margin-left: 100px;
+      }
+      p.E{
+        margin-left: inherit; /*inherit margin property from parent*/
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    MARGINS :properties are used to create space around elements, outside of any defines borders.
+            All the margin properties can have the following values:
+                :auto - the browser calculates the margin
+                :length - specifies a margin in px, pt, cm, etc.
+                :% - specifies a margin in % of the width of the containing element
+                :inherit - specifies that the margin should be inherited from the parent element
+        -->
+    <h2>Using individual margin properties</h2>
+    <div class="A">division element</div>
+    <div class="B">division element</div>
+    <div class="C">division element</div>
+    <div class="D"><p class="E">division element</p></div>
+  </body>
+</html>

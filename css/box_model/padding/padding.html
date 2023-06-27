@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.A {
+        border: 1px solid black;
+        background-color: lightblue;
+        padding-top: 50px;
+        padding-right:  30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      }
+      div.B {
+        border: 1px solid black;
+        background-color: lightblue;
+        padding:25px 50px 75px 100px;
+      }
+      div.C {
+        width: 300px;
+        padding: 54px;
+        background-color: yellow;  /*content remain same but box increase*/
+      }
+      div.D {
+        width: 300px;
+        padding: 54px;
+        box-sizing: border-box;  /*box remain same but content get shrink due to padding*/
+        background-color: yellow;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="A">division element</div>
+    <div class="B">division element</div>
+    <div class="C">division element</div>
+  </br>
+    <div class="D">division element</div>
+  </body>
+</html>

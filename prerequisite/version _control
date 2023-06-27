@@ -1,0 +1,54 @@
+VERSION CONTROL :makes save points that saves your project.
+                :Provide total development freedom.
+                :eg. git ,subversion ,perforce.
+                :git is a version control tool.
+                :Github is a service that host git repositories.
+
+GIT :Git  is  a  version  control  system  that  is  used  for  tracking changes 
+     in computer files and coordinating work on those files  among  multiple  people.
+     It  is  a  distributed  version control system, which means that it allows multiple
+     users to work on the same files simultaneously and keeps track of changes made to 
+     the files by each user. Git is widely used in software development and has become 
+     a standard tool for collaborating on code.
+
+GITHUB :It is a service that host git repositories.
+
+REPOSITORIES :is a folder which have multiple files and it has the capability to made 
+              changes by git tool.
+
+-> git --version :to check version
+-> pwd :to check in which directory i am currently. ex :/Users/lakshya
+-> cd :change directory . ex :cd Desktop => /Users/lakshya/Desktop
+-> cd git-demo => /Users/lakshya/Desktop/git-demo
+-> cd .. :coming back to dektop but can't do cd Desktop when you are inside git-demo.
+-> clear :clear everything
+
+
+CREATING A GIT REPO :
+-> git init :initialize an existing directory as a Git repository.
+            :now a git repo is created but is hidden so to see it type :cmd + shift + .
+             .git folder visible which contain meta  data.
+->git clone url :retrieve an entire repository from a hosted location via URL.
+
+LIFE CYCLE OF A CHANGE
+git-dempo_repo
+1) :file1.js -> file1'.js
+2) :file2.js -> file2'.js
+3) :file3.js -> file3'.js
+
+|--------------------------------------------------------------------------------
+|                Repository (final commited changes)                             |
+|  file1 , file2 , file3                         file1'.js ,file2'.js ,file3'.js |
+|-----------------------------------------------------------------------^--------|    
+|  working dir. (temporary changes)  |   staginf index (about to commit)|        |
+|                                    |                                  |        |
+|    file1'.js                       |   file1'.js                      |        |
+|    file2'.js---------------------->|   file2'.js-----------------------        |
+|    file3'.js                       |   file3'.js                               |
+|                                    |                                           |
+----------------------------------------------------------------------------------
+
+
+
+
+

@@ -1,0 +1,234 @@
+<!--
+HTML :(HYPER TEXT MARKUP LANGUAGE) used to structure and format content on the web, including text,image web using series of element
+      that are represented by tags.
+     :It consists of a series of elements that are represented by tags.
+     :HYPERTEXT ->is text displayed on computer references(hyperlinks)to other text that the reader can immediately access.
+     :MARKUP LANGUAGE ->is a language which consists of keywords , names, tags that helps in formatting.
+
+TAG :It is not case-sensitive. Ex <title>,<TITLE>,<tiTLe> all are same.
+    :are enclosed in angle brackets <> and may have attributes
+
+->SEMANTIC TAG :clearly defines its content.
+               :<html> ,<figure> ,<figcaption> ,<head> ,<body> ,<header> ,<main> ,<aside> ,<footer> ,<article> ,<section> ,<nav> ,<summary> ,<mark>
+->NON SEMANTIC TAG :doesn't tell about its content.
+                   :<div> , <span>
+->STRUCTURE TAG :<h1> to <h6> ,<p> ,<a> ,<ul> ,<ol> ,<table> <tr> <td> ,<img> ,<form> ,<input>
+
+ELEMENT :<tag>content of html</tag>
+        :<tag> is opening tag ,then html content ,</tag> is closing tag.
+        :element consists of all these three things.
+-->
+
+<!DOCTYPE html>  <!--specifies that we are working with HTML5 document.-->
+<html lang="en">  <!--tells content of web page is in english-->
+                  <!--<html> tag : also known as root element which acts as a container for every other element except <!DOCTYPE html> tag.
+                                 : default size of html font is 16px-->
+                 
+<head>    <!--Element acts as a container for everything that you want to include on html page ,that will not show to viewers.
+              It includes keywords and page description ,CSS to syle content , charaterset declarations and more.-->
+    <!--
+    <meta> tag :defines metadata about an html. metadata is data about data.
+               :metadata will not be displayed on the page, but is machine parsable (capable of being read by computer).
+               :It is used to specify character set ,page description ,keywprds ,author of the document ,viewport settings.
+    -->
+    <meta charset="UTF-8">  <!--specifies the character encoding for the html document-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--viewport :displayed area ,initial-scale :control zoom level when page is first loaded-->
+    <title>Document</title>  <!--defines title of the document which is displayed in browser's title bar-->
+</head>
+<body>  <!--this contains all the content(text,images,videos,audio etc) that displays on the web page -->
+
+    <!--,
+    HEADING TAG :used to define heading. 
+                :<h1>highest level , <h6>lowest level 
+    -->
+    <h1 style="background-color:aqua">this is my first heading</h1>
+    <h2 style="color:brown;">this is my second heading</h2>
+    <h3>this is my second heading</h3>
+    <h4>this is my second heading</h4>
+    <h5>this is my second heading</h5>
+    <h6>this is my second heading</h6> <!--above h6 tags work as para tag-->
+
+
+
+    <!--
+    PREFORMATTED TEXT :is used to present exactly the same text in same format written in file.
+    -->
+    <pre>
+        My name is 
+        love babbar.
+        I live in delhi
+    </pre>
+    
+    <!--
+    HORIZONTAL RULE :
+    -->
+    <hr>
+
+
+    <!--
+    3)FORMATTING TAG :
+    -->
+    <p><i>Italic</i></p>  <!--formats text in italic-->
+    <p><b>Bold</b></p>  <!--format text in bold-->
+    <p><strong>Strong</strong></p>  <!--formats text in bold and emphasize imp. information-->
+    <p><em>emphasis</em></p>  <!--known as emphasis tag that formats in italics-->
+    <p>hi<sub>Subscript</sub></p>  <!--format text as subscript-->
+    <p>hi<sup>Superscript</sup></p>  <!--format text as superscript-->
+    <p>small<small>Small</small></p>  <!--decr size of text-->
+    <p><del>Delete</del></p>  <!--format text as deleted by striking a iine-->
+    <p><address>Address</address></p>  <!--used to show author's contact info-->
+    <p><abbr>InsertedAbbreviation</abbr>  <!--denotes an abbreviation-->
+    </p><p><code>CodeSnippet</code></p>  <!--format text as code snippets-->
+    <p><mark>MarkedText</mark></p>  <!--highlights text-->
+    <p><ins>Insert</ins></p>  <!--formats text as inserted , which is usually underlined-->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>              <!--specifies a section that is quoted from another source-->
+    <p><q>ShortQuoted</q></p>  <!--shorter inline quotes-->
+    <p><cite>Cited</cite></p>  <!--used to cite the author of a quote-->
+    <p><strike>striked</strike></p>
+
+
+    <!-- 
+    ANCHOR TAG :<a> defines a hyperlink to other pages(external web pages or particular section within same page). 
+               :href :attrbute specifies urls of the destination link.
+               :download :attribute specifies that target clicked is downloadable file.
+               :target :attribute specifies where the linked resource should be opened.
+    -->
+    <a href="https://www.thecodehelp.in/" target="_blank">CODE HELP<br/></a>  <!--opens the linked document in new window-->
+    <a href="https://www.thecodehelp.in/" target="_self">CODE HELP<br/></a>   <!--opens the linked document in same frame. (Default)-->
+    <a href="https://www.thecodehelp.in/" target="_parent">CODE HELP<br/></a>  <!--opens the linked document in parent frame-->
+    <a href="https://www.thecodehelp.in/" target="_top">CODE HELP<br/></a>  <!--opens the linked document in the full body of the window-->
+    <a href="https://www.google.com">click here</a>
+    <a href="mailto:mr.blue.0037@gmail.com">MAIL</a>  <!--mail using anchor tag-->
+    <a href="tel:8368099458">TELEPHONE</a>  <!--call using anchor tag-->
+    <br/>
+
+    <!--
+    IMAGE TAG :used to embed an image in html page. "src" att is used to specifies path of image and "alt" att is for alternate text, if for some reason image is not displayed.
+    1)ABSOLUTE URL :link to external image that is hosted on another website.
+    2)RELATIVE URL :
+    -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG/440px-Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG" width="100" height="100" alt="TOFU">   
+
+
+    <!--
+    UNORDERED LIST :defines an unordered(bulleted) list.
+    -->
+    <ul>   <!--ordered can be change-->
+        <li>Maggi</li>
+        <li>kurkure</li>
+        <li>lays</li>
+    </ul>
+    <ul>   <!--ul>(li>p>a)*5-->
+        <li>
+            <p><a href="">A</a></p>
+        </li>
+        <li>
+            <p><a href="">B</a></p>
+        </li>
+        <li>
+            <p><a href="">C</a></p>
+        </li>
+        <li>
+            <p><a href="">D</a></p>
+        </li>
+        <li>
+            <p><a href="">E</a></p>
+        </li>
+    </ul>
+
+    <!--
+    ORDERED LIST :defines an ordered list which can be numerical or alphabetical.
+    -->   <!--order can't be change-->
+    <ol>           <!--ol>li*3-->
+        <li>paani garam karo</li>
+        <li>chai patti daalo</li>
+        <li>chai peelo</li>
+    </ol>
+
+    <!--
+    DESCRIPTION LIST :<dl> represents a description list and is used in conjucation with
+                      1) :<dt> :defines terms.
+                      2) :<dd> :describe each term.
+    -->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>milk</dt>
+        <dd>while cold drink</dd>
+    </dl>
+
+    <!--
+    DIV TAG :can be employed to segment and style different areas of document .It also acts as parent container for other elements within the document.
+            :is styled using the class or id attribute.
+    -->
+    <div class="container">  <!--.container-->
+        <section>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </div>  
+    <div class="wrapper">  <!--.wrapper-->
+       <header></header>
+       <main></main>
+       <footer></footer> 
+    </div>
+    <div class="about us">
+        <h1>this is about us section</h1>
+        <p>welcome to the about us section</p>
+    </div>
+
+    <!--
+    BLOCK ELEMENTS :always starts on a new line and block level element takes up full width available (stretch out to the left and right as far as it can).
+                EX :<address>  <article>  <aside>  <blockquote>  <canvas>  <dd>  <div>  <dl>  <dt>  
+                    <fieldset>  <figcaption>  <figure>  <footer>  <form>  <h1>-<h6>  <header>  <hr>
+                    <li>  <main>  <nav>  <noscript>  <ol>  <p>  <pre>  <section>  <table>  <tfoot>  
+                    <ul>  <video>
+    INLINE ELEMENTS :used to differentiate specific part of code.
+                    :doesn't start on a new line and only takes up as much width as necessary.
+                 EX :<a>  <abbr>  <acronym>  <b>  <bdo>  <big>  <br>  <button>  <cite>  <code>  <dfn>  
+                     <em>  <i>  <img>  <input>  <kbd>  <label>  <map>  <object>  <output>  <q>  <samp>
+                     <script>  <select>  <small>  <span>  <strong>  <sub>  <sup>  <textarea>  <time>  
+                     <tt>  <var>
+    -->
+    <div style="background-color: aqua;"> this is my first div </div>  
+    <div style="background-color: aqua;"> this is my first div </div>  
+    <span style="background-color: yellow;"> this is my first span tag</span>
+    <span style="background-color: yellow;"> this is my first span tag</span>
+    <span style="background-color: yellow;"> this is my first span tag</span>
+    <div style="background-color: aqua; display: inline;"> this is my first div </div>  <!--block to inline conversion -->
+    <span style="background-color: aqua; display: block;" > this is my first div </span>  <!--inline to block conversion-->
+
+    <!--
+    NAV TAG :defines a set of navigation links.
+            :not all the link of a document should be inside it. The <nav> is intended only for major block of navigation links.
+    -->
+    <nav>   <!--nav>ul>(li>a)*4-->
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">LOGIN</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <!--
+    SOME MISCELLANEOUS CONCEPT
+    EMPTY TAG / SELF CLOSING TAG :<br/> ,<img/> ,<input/> 
+    -->
+    
+    <p>welcome to</p>
+    
+
+
+</body>
+</html>

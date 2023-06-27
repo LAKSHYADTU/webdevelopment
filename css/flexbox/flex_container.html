@@ -1,0 +1,449 @@
+<!--
+FLEXBOX :is a great way to get more flexibility in our layout and to simplify responsive layout design. It makes it easy to align elements on a 2D plane and is preety easy to use once you get familiar with the main properties.
+Before the Flexbox Layout module, there were four layout modes:
+   -> Block, for sections in a webpage
+   -> Inline, for text
+   -> Table, for two-dimensional table data
+   -> Positioned, for explicit position of an element
+-->
+<!--
+parent container main axis :horizontal width.
+                 cross axis :vertical length.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.container{
+            height: 400px;
+            border: 2px solid green;
+            display: flex;  /*align boxes in h*/
+        }
+        div.box{
+            border: 1px solid brown;
+        }
+        .A{
+            display: flex;
+            flex-direction: column;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .B{
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+
+        .C{
+            display: flex;
+            flex-direction: row;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+
+        .D{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .E{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .F{
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .G{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .H{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .I{
+            display: flex;
+            justify-content: center;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .J{
+            display: flex;
+            justify-content: flex-start;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .K{
+            display: flex;
+            justify-content: flex-end;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .L{
+            display: flex;
+            justify-content: space-around;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .L1{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .M{
+            display: flex;
+            justify-content: space-between;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .N{
+            display: flex;
+            height: 200px;
+            align-items: center;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .O{
+            display: flex;
+            height: 200px;
+            align-items: flex-start;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .P{
+            display: flex;
+            height: 200px;
+            align-items: flex-end;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .Q{
+            display: flex;
+            height: 200px;
+            align-items: stretch;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .R{
+            display: flex;
+            height: 200px;
+            align-items: baseline;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .S{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: space-between;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .T{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: space-around;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .U{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: stretch;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .V{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: center;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .W{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+        .X{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            background-color: dodgerblue;
+            border: solid black;
+        }
+
+        .a,.b,.c,.d,.e,.f,.g,.h ,.i,.j,.k,.l,.l1,.m ,.n,.o,.p,.q,.r,.s,.t,.u,.v,.w,.x{
+            background-color: grey;
+            width: 100px;
+            margin:10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            border: solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">  <!--.container>.box*4{box-$}-->
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+    </div>
+    <!--
+    FLEX CONTAINER PROPERTY :
+    1)FLEX-DIRECTION :defines in which direction container wants to stack the flex items.
+    -->
+    <!--column:value stack the items vertically (from top to bottom).-->
+    <div class="A">
+            <div class="a">a1</div>
+            <div class="a">a2</div>
+            <div class="a">a3</div>
+    </div>
+    <!--column-reverse :value stack th vertically(from bottom to top).-->
+    <div class="B">
+            <div class="b">b1</div>
+            <div class="b">b2</div>
+            <div class="b">b3</div>
+    </div>
+    <!--row :value stack the flex items horizontally (from left to right).-->
+    <div class="C">
+            <div class="c">c1</div>
+            <div class="c">c2</div>
+            <div class="c">c3</div>
+    </div>
+    <!--row-reverse:value flex items horizontally (from right to left).-->
+    <div class="D">
+            <div class="d">d1</div>
+            <div class="d">d2</div>
+            <div class="d">d3</div>
+    </div>
+    
+
+    <!--
+    2)FLEX-WRAP :property specify whether the flex items should wrap or not.
+    -->
+    <!--wrap :value specifies that the flex items will wrap if necessary.-->
+    <div class="E">
+            <div class="e">e1</div>
+            <div class="e">e2</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+            <div class="e">e3</div>
+    </div>
+    <!--nowrap :value specifies that the flex items will not wrap.(default) and it will squeeze.-->
+    <div class="F">
+            <div class="f">f1</div>
+            <div class="f">f2</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+            <div class="f">f3</div>
+    </div>
+    <!--wrap-reverse :value specifies that flexible items will wrap if necessary,in reverse order.-->
+    <div class="G">
+            <div class="g">g1</div>
+            <div class="g">g2</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+            <div class="g">g3</div>
+    </div>
+    
+
+    <!--
+    3)FLEX-FLOW :property is shorthand for both flex-direction and flex-wrap.
+    -->
+    <div class="H">
+            <div class="h">h1</div>
+            <div class="h">h2</div>
+            <div class="h">h3</div>
+    </div>
+
+
+    <!--
+    4)JUSTIFY-CONTENT :property is used to allign the flex items horizontally.
+    -->
+    <!--center :value aligns the flex items at the centre of the container.-->
+    <div class="I">
+            <div class="i">i1</div>
+            <div class="i">i2</div>
+            <div class="i">i3</div>
+    </div>
+    <!--flex-start :value aligns the flex items at the begining of the container (default).-->
+    <div class="J">
+            <div class="j">j1</div>
+            <div class="j">j2</div>
+            <div class="j">j3</div>
+    </div>
+    <!--flex-end :value aligns the flex items at the end of the container-->
+    <div class="K">
+            <div class="k">k1</div>
+            <div class="k">k2</div>
+            <div class="k">k3</div>
+    </div>
+    <!--space-around :distance in b/w items are equal but before and after items space aren't equal.-->
+    <div class="L">
+            <div class="l">l1</div>
+            <div class="l">l2</div>
+            <div class="l">l3</div>
+    </div>
+    <!--space evenly :value display the flex items with equal space b/w ,before and after elements.-->
+    <div class="L1">
+            <div class="l1">l1.1</div>
+            <div class="l1">l2.2</div>
+            <div class="l1">l3.3</div>
+    </div>
+    <!--space between :value displays the flex items with space b/w the lines.-->
+    <div class="M">
+            <div class="m">m1</div>
+            <div class="m">m2</div>
+            <div class="m">m3</div>
+    </div>
+
+
+    <!--
+    5)ALIGN-ITEMS :property is used to align the flex items vertically.
+    -->
+    <!--center :value aligns the flex items in the middle of container.-->
+    <div class="N">
+            <div class="n">n1</div>
+            <div class="n">n2</div>
+            <div class="n">n3</div>
+    </div>
+    <!--flex-start :value aligns the flex items at the top of container.-->
+    <div class="O">
+            <div class="o">o1</div>
+            <div class="o">o2</div>
+            <div class="o">o3</div>
+    </div>
+    <!--flex-end :value aligns the flex items at the bottom of the container.-->
+    <div class="P">
+            <div class="p">p1</div>
+            <div class="p">p2</div>
+            <div class="p">p3</div>
+    </div>
+    <!--stretch :value stretch the flex items to fill the container (default).-->
+    <div class="Q">
+            <div class="q">q1</div>
+            <div class="q">q2</div>
+            <div class="q">q3</div>
+    </div>
+    <!--baseline :value aligns the flex items such as their baselines aligns.-->
+    <div class="R">
+            <div class="r"><h1>r1</h1></div>
+            <div class="r"><h3>r2</h3></div>
+            <div class="r"><h6>r3</h6></div>
+    </div>
+
+
+    <!--
+    6)ALIGN-CONTENT :property is used to align the flex lines.(handle spacing in b/w rows)
+    -->
+    <!--space-between :value displays the flex lines with equal spacing in between rows.-->
+    <div class="S">
+            <div class="s">s1</div>
+            <div class="s">s2</div>
+            <div class="s">s3</div>
+            <div class="s">s4</div>
+            <div class="s">s5</div>
+            <div class="s">s6</div>
+            <div class="s">s7</div>
+    </div>
+    <!--space_around :value displays the flex lines with space before , between and after them-->
+    <div class="T">
+            <div class="t">t1</div>
+            <div class="t">t2</div>
+            <div class="t">t3</div>
+            <div class="t">t4</div>
+            <div class="t">t5</div>
+            <div class="t">t6</div>
+            <div class="t">t7</div>
+    </div>
+    <!--stretch :value stretches the flex lines to take up the remaining space (default).-->
+    <div class="U">
+            <div class="u">u1</div>
+            <div class="u">u2</div>
+            <div class="u">u3</div>
+            <div class="u">u4</div>
+            <div class="u">u5</div>
+            <div class="u">u6</div>
+            <div class="u">u7</div>
+    </div>
+    <!--center :value displays the flex lines in the middle of the container-->
+    <div class="V">
+            <div class="v">v1</div>
+            <div class="v">v2</div>
+            <div class="v">v3</div>
+            <div class="v">v4</div>
+            <div class="v">v5</div>
+            <div class="v">v6</div>
+            <div class="v">v7</div>
+    </div>
+    <!--flex-start :value displays the flex lines at the start of the container.-->
+    <div class="W">
+            <div class="w">w1</div>
+            <div class="w">w2</div>
+            <div class="w">w3</div>
+            <div class="w">w4</div>
+            <div class="w">w5</div>
+            <div class="w">w6</div>
+            <div class="w">w7</div>
+    </div>
+    <!--flex-end :value displays the flex lines at the end of the container.-->
+    <div class="X">
+            <div class="x">x1</div>
+            <div class="x">x2</div>
+            <div class="x">x3</div>
+            <div class="x">x4</div>
+            <div class="x">x5</div>
+            <div class="x">x6</div>
+            <div class="x">x7</div>
+    </div>
+    
+</body>
+</html>

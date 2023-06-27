@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div#A {
+        border: 2px solid black;
+        padding: 25px;
+        background: url(paper1.jpg);
+        background-size: 100% 100%;
+      }
+
+      div#B {
+        border: 2px solid black;
+        padding: 25px;
+        background: url(paper1.jpg);
+        background-size: 75% 50%;
+
+      }
+      div#C {
+        border: 2px solid black;
+        padding: 25px;
+        background: url(paper1.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+      }
+      div#D {
+        border: 2px solid black;
+        padding: 25px;
+        background: url(paper1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    BACKGROUND-SIZE :following are values.
+    -->
+    <!--
+    1)giving width and height in %
+    -->
+    <div id="A">
+        The size of the background image is set in percent of the parent
+        element; 100% width and 100% height.
+    </div>
+    <div id="B">
+        The size of the background image is set in percent of the parent
+        element; 75% width and 50% height.
+    </div>
+
+
+    <!--
+    2)giving width and height in length
+    -->
+    <div id="B">
+        The size of the background image is set in percent of the parent
+        element; 75% width and 50% height.
+    </div>
+    <!--
+    3)AUTO :Default value. The background image is displayed in its original size
+    -->
+    <div id="C">
+        The size of the background image is set in percent of the parent
+        element; 100% width and 100% height.
+    </div>
+
+
+    <!--
+    4)COVER :Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.
+    -->
+    <div id="D">
+        The size of the background image is set in percent of the parent
+        element; 100% width and 100% height.
+    </div>
+
+
+    <!--
+    5)CONTAIN :Resize the background image to make sure the image is fully visible.
+    -->
+  </body>
+</html>

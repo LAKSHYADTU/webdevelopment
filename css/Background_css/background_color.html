@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        background-color: green;
+      }
+
+      /*opacity  specfies transparency. values 0.0 - 1.0*/
+      div.A {
+        background-color: lightblue;
+        opacity:0.5; /*due to this all of its child element inherit same tranparency and make transparent element hard to read*/
+      }
+      div {
+      background: rgba(0, 128, 0, 0.3); /* Green background with 30% opacity */
+      }                                  /*here only background color get transparent but text remain as it is*/
+    
+    </style>
+  </head>
+  <body>
+    <h1>CSS background-color example!</h1>
+    <div class="A">This is a text inside a div element.</div>
+    <div class="B">this is a text inside a div elemenr.</div>
+  </body>
+</html>

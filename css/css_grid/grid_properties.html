@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .A,.B,.C,.D,.E,.F,.G,.H,.I,.J,.K,.L,.M,.N,.O,.P,.Q,.R,.S,.T,.U,.V,.W,.X,.Y,.Z{
+            border: 1px solid brown;
+            background-color: yellow;
+            height: 700px;
+            width: 600px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px;
+            grid-gap: 10px;
+        }
+        .A{
+            justify-content: start;
+        }
+        .B{
+            justify-content: end;
+        }
+        .C{
+            justify-content: center;
+        }
+        .D{
+            justify-content: space-between;
+        }
+        .E{
+            justify-content: space-around;
+        }
+        .F{
+            justify-content: space-evenly;
+        }
+
+
+        .G{
+            align-items: start;
+        }
+        .H{
+            align-items: end;
+        }
+        .I{
+            align-items: center;
+        }
+        .J{
+            align-items: baseline;
+        }
+        .K{
+            align-items: stretch;
+        }
+
+
+        .L{
+        }
+        .T{
+            place-items: center;
+        }
+        .U{
+            place-content: center;
+        }
+        .V{
+            place-self: center;
+        }
+        
+        #r1{
+            place-items: start;
+        }
+    
+        #r2{
+            justify-self: left;
+        }
+        #r3{
+            justify-self: center;
+        }
+        #r4{
+            justify-self: end;
+        }
+        #r5{
+            justify-self: right;
+        }
+        #r6{
+            justify-self: stretch;
+        }
+
+
+        #s1{
+            align-self: flex-start;
+        }
+        #s2{
+            align-self: flex-end;
+        }
+        #s3{
+            align-self: center;
+        }
+        #s4{
+            align-self: stretch;
+        }
+        
+        .a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k,.l,.m,.n,.o,.p,.q,.r,.s,.t,.u,.v,.w,.x,.y,.z{
+            border: 1px solid red;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    JUSTIFY-CONTENT :used to allign items horizontally.
+                    :These properties move the entire grid not just the individual grid items.
+                    :like we have align-content for vertical shifting.
+    -->
+    <!--start-->
+    <div class="A">
+        <div class="a">a1</div>
+        <div class="a">a2</div>
+        <div class="a">a3</div>
+        <div class="a">a4</div>
+        <div class="a">a5</div>
+        <div class="a">a6</div>
+    </div>
+    <!--end-->
+    <div class="B">
+        <div class="b">b1</div>
+        <div class="b">b2</div>
+        <div class="b">b3</div>
+        <div class="b">b4</div>
+        <div class="b">b5</div>
+        <div class="b">b6</div>
+    </div>
+    <!--center-->
+    <div class="C">
+        <div class="c">c1</div>
+        <div class="c">c2</div>
+        <div class="c">c3</div>
+        <div class="c">c4</div>
+        <div class="c">c5</div>
+        <div class="c">c6</div>
+    </div>
+    <!--space-between-->
+    <div class="D">
+        <div class="d">d1</div>
+        <div class="d">d2</div>
+        <div class="d">d3</div>
+        <div class="d">d4</div>
+        <div class="d">d5</div>
+        <div class="d">d6</div>
+    </div>
+    <!--space-around-->
+    <div class="E">
+        <div class="e">e1</div>
+        <div class="e">e2</div>
+        <div class="e">e3</div>
+        <div class="e">e4</div>
+        <div class="e">e5</div>
+        <div class="e">e6</div>
+    </div>
+    <!--space-evenly-->
+    <div class="F">
+        <div class="f">f1</div>
+        <div class="f">f2</div>
+        <div class="f">f3</div>
+        <div class="f">f4</div>
+        <div class="f">f5</div>
+        <div class="f">f6</div>
+    </div>
+
+
+    <!--
+    ALIGN-ITEMS :These properties are applied to the parent grid container but move the individual grid items vertically.
+                :like we have justify-items for horizontal shifting.
+    -->
+    <!--start-->
+    <div class="G">
+        <div class="g">g1</div>
+        <div class="g">g2</div>
+        <div class="g">g3</div>
+        <div class="g">g4</div>
+        <div class="g">g5</div>
+        <div class="g">g6</div>
+    </div>
+    <!--end-->
+    <div class="H">
+        <div class="h">h1</div>
+        <div class="h">h2</div>
+        <div class="h">h3</div>
+        <div class="h">h4</div>
+        <div class="h">h5</div>
+        <div class="h">h6</div>
+    </div>
+    <!--center-->
+    <div class="I">
+        <div class="i">i1</div>
+        <div class="i">i2</div>
+        <div class="i">i3</div>
+        <div class="i">i4</div>
+        <div class="i">i5</div>
+        <div class="i">i6</div>
+    </div>
+    <!--baseline-->
+    <div class="J">
+        <div class="j">j1</div>
+        <div class="j">j2</div>
+        <div class="j">j3</div>
+        <div class="j">j4</div>
+        <div class="j">j5</div>
+        <div class="j">j</div>
+    </div>
+    <!--stretch-->
+    <div class="K">
+        <div class="k">k1</div>
+        <div class="k">k2</divl
+        <div class="k">k3</div>
+        <div class="k">k4</div>
+        <div class="k">k5</div>
+        <div class="k">k6</div>
+    </div>
+
+
+    <!---->
+    <div class="L">
+        <div class="l">l1</div>
+        <div class="l">l2</div>
+        <div class="l">l3</div>
+        <div class="l">l4</div>
+        <div class="l">l5</div>
+        <div class="l">l6</div>
+    </div>
+    <div class="M">
+        <div class="m">m1</div>
+        <div class="m">m2</div>
+        <div class="m">m3</div>
+        <div class="m">m4</div>
+        <div class="m">m5</div>
+        <div class="m">m6</div>
+    </div>
+    <div class="N">
+        <div class="n">n1</div>
+        <div class="n">n2</div>
+        <div class="n">n3</div>
+        <div class="n">n4</div>
+        <div class="n">n5</div>
+        <div class="n">n6</div>
+    </div>
+    <div class="O">
+        <div class="o">o1</div>
+        <div class="o">o2</div>
+        <div class="o">o3</div>
+        <div class="o">o4</div>
+        <div class="o">o5</div>
+        <div class="o">o6</div>
+    </div>
+    <div class="P">
+        <div class="p">p1</div>
+        <div class="p">p2</div>
+        <div class="p">p3</div>
+        <div class="p">p4</div>
+        <div class="p">p5</div>
+        <div class="p">p6</div>
+    </div>
+    <div class="Q">
+        <div class="q">q1</div>
+        <div class="q">q2</div>
+        <div class="q">q3</div>
+        <div class="q">q4</div>
+        <div class="q">q5</div>
+        <div class="q">q6</div>
+    </div>
+
+
+    <!--
+    JUSTIFY SELF :works on items horizontally.
+                 :it is a property of element not container.
+    -->
+    <div class="R">
+        <div class="r" id="r1">r1</div>  <!--start-->
+        <div class="r" id="r2">r2</div>  <!--left-->
+        <div class="r" id="r3">r3</div>  <!--center-->
+        <div class="r" id="r4">r4</div>  <!--end-->
+        <div class="r" id="r5">r5</div>  <!--right-->
+        <div class="r" id="r6">r6</div>  <!--stretch-->
+    </div>
+
+
+    <!--
+    ALIGN-SELF :works on items vertically.
+               :it is a property of element not container.
+    -->
+    <div class="S">
+        <div class="s" id="s1">s1</div>
+        <div class="s" id="s2">s2</div>
+        <div class="s" id="s3">s3</div>
+        <div class="s" id="s4">s4</div>
+    </div>
+
+    
+    <!--
+    PLACE ITEMS :shorthand for justify-items and align-items.
+    -->
+    <div class="T">
+        <div class="t">t1</div>
+        <div class="t">t2</div>
+        <div class="t">t3</div>
+        <div class="t">t4</div>
+        <div class="t">t5</div>
+        <div class="t">t6</div>
+    </div>
+
+
+    <!--
+    PLACE CONTENT :shorthand for justify-content and align-content.
+    -->
+    <div class="U">
+        <div class="u">u1</div>
+        <div class="u">u2</div>
+        <div class="u">u3</div>
+        <div class="u">u4</div>
+        <div class="u">u5</div>
+        <div class="u">u6</div>
+    </div>
+
+
+    <!--
+    PLACE SELF :
+    -->
+    <div class="V">
+        <div class="v">v1</div>
+        <div class="v">v2</div>
+        <div class="v">v3</div>
+        <div class="v">v4</div>
+        <div class="v">v5</div>
+        <div class="v">v6</div>
+    </div>
+    <div class="W">
+        <div class="w">w1</div>
+        <div class="w">w2</div>
+        <div class="w">w3</div>
+        <div class="w">w4</div>
+        <div class="w">w5</div>
+        <div class="w">w6</div>
+    </div>
+    <div class="X">
+        <div class="x">x1</div>
+        <div class="x">x2</div>
+        <div class="x">x3</div>
+        <div class="x">x4</div>
+        <div class="x">x5</div>
+        <div class="x">x6</div>
+    </div>
+    <div class="Y">
+        <div class="y">y1</div>
+        <div class="y">y2</div>
+        <div class="y">y3</div>
+        <div class="y">y4</div>
+        <div class="y">y5</div>
+        <div class="y">y6</div>
+    </div>
+    <div class="Z">
+        <div class="z">z1</div>
+        <div class="z">z2</div>
+        <div class="z">z3</div>
+        <div class="z">z4</div>
+        <div class="z">z5</div>
+        <div class="z">z6</div>
+    </div>
+    <div class="J">
+        <div class="b">b1</div>
+        <div class="b">b2</div>
+        <div class="b">b3</div>
+        <div class="b">b4</div>
+        <div class="b">b5</div>
+        <div class="b">b6</div>
+    </div>
+    <div class="J">
+        <div class="b">b1</div>
+        <div class="b">b2</div>
+        <div class="b">b3</div>
+        <div class="b">b4</div>
+        <div class="b">b5</div>
+        <div class="b">b6</div>
+    </div>
+    <div class="J">
+        <div class="b">b1</div>
+        <div class="b">b2</div>
+        <div class="b">b3</div>
+        <div class="b">b4</div>
+        <div class="b">b5</div>
+        <div class="b">b6</div>
+    </div>
+    <div class="J">
+        <div class="b">b1</div>
+        <div class="b">b2</div>
+        <div class="b">b3</div>
+        <div class="b">b4</div>
+        <div class="b">b5</div>
+        <div class="b">b6</div>
+    </div>
+</body>
+</html>

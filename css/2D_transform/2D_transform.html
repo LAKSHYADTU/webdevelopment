@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.A {
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: translate(50px, 100px);  /*50px to right and 100px to down*/
+      }
+      div.B{
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform:rotate(20deg);
+      }
+      div.C{
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform:rotate(-20deg);
+      }
+      div.D{
+        margin: 150px;
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: scale(2,3);  /*can also give decimal value*/
+      }
+      div.E {
+        margin: 150px;
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: scaleX(2);
+      }
+      div.F {
+        margin: 150px;
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: scaleY(3);
+      }
+      div.G {
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: skew(20deg,10deg);  /*if the second parameter isn't specified then it has value 0*/
+      }
+      div.H {
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: skewX(20deg);
+      }
+      div.I {
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: skewY(20deg);
+      }
+      div.J {
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <!--
+    TRANSFORM :allows you to move , rotate , scale and skew elements.
+    DIFFERENT 2D TRANSFORMS METHODS :
+    -->
+    <!--
+    1)TRANSLATE :method moves an element from its current position (acc. to x and y axis).
+    -->
+    <div class="A">
+      This div element is moved 50 pixels to the right, and 100 pixels down from
+      its current position.
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+    <!--
+    2)ROTATE :method rotated an element clockwise or counter clockwise acc. to given degree.
+    -->
+    <div class="B">this is div element rotated to 20 degrees</div>
+    <div class="C">this is div element rotated to -20 degrees</div>
+
+
+    <!--
+    3)SCALE :method incr or decr size of an element.
+    -->
+    <div class="D">
+      This div element is two times of its original width, and three times of its original height.
+    </div>
+
+
+    <!--
+    4)SCALEX :method incr or decr width of an element.
+    -->
+    <div class="E">
+      This div element is two times of its original width.
+    </div>
+
+
+    <!--
+    5)SCALEY :method incr or decr height of an element.
+    -->
+    <div class="F">
+      This div element is three times of its original height.
+    </div>
+
+
+    <!--
+    6)SKEW :skew an element along x and y axis by the given angles.
+    -->
+    <div class="G">
+      This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+    </div>
+
+
+    <!--
+    SKEWX :method skew an element along the x axis by the given angle.
+    -->
+    <div class="H">
+      This div element is skewed 20 degrees along the X-axis.
+    </div>
+
+
+    <!--
+    SKEWY :method skew an element along y axis by the given angle.
+    -->
+    <div class="I">
+      This div element is skewed 20 degrees along the Y-axis.
+    </div>
+
+
+    <!--
+    MATRIX :combine all the 2D transform method into one.
+           :It contain 6 parameter.matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+    -->
+    <div class="J">
+      Using the matrix() method.
+    </div>
+  </body>
+</html>

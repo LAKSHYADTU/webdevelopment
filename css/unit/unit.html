@@ -1,0 +1,85 @@
+<!--
+UNITS :css takes length values ,such as width ,margin ,padding ,font-size etc.
+      :A white space cannot appear b/w number and unit.however,if the value is 0, unit cn be omitted.
+      :There are two types of length unit.
+
+1)ABSOLUTE LENGTHS :unit are fixed and not recommended for use on screen, because size vary so much. however they can be used if the o/p medium is known, such as print layout.
+Unit	Description
+cm	    centimeters
+mm	    millimeters
+in	    inches (1in = 96px = 2.54cm)
+px 	    pixels (1px = 1/96th of 1in)
+pt	    points (1pt = 1/72 of 1in)
+pc	    picas (1pc = 12 pt
+
+2)RELATIVE LENGTH :unit specify a length relative to another length property.
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.A {
+        font-size: 30px;
+        border: 1px solid black;
+      }
+      span.B {
+        font-size: 0.5em;
+        border: 1px solid black;
+      }
+      div.C {
+        font-size: 30px;
+        border: 1px solid black;
+      }
+      span.D {
+        font-size: 1ex;
+      }
+      body{
+        font-size: 16px;
+      }
+      div.E{
+        font-size: 2rem;
+        border: 1px solid black;
+      }
+      div.F{
+        background-color: red;
+        width: 500px;
+        height: 100px;
+      }
+      div.G{
+        background-color:black;
+        width: 10%;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    em :relative to the font-size of parent element(2em means 2 times size of parent font).
+`   -->
+    <div class="A">
+      The font-size of the div element is set to 30px.
+      <span class="B">Tdive span element inside the div element has a font-size of 0.5em, which
+        equals to 0.5x30 = 15px</div>
+    </div>
+
+    <!--
+    ex :relative to the x-height of the current font(rarely used).
+    -->
+    <div class="C">The font-size of the div element is set to 30px. 
+        <span class="D">The span element inside the div element has a font-size of 1ex</span>.
+    </div>
+
+    <!--
+    rem :relative to the font size of root element.
+    -->
+    <div class="E">The font-size of this div element is 2rem.</div>
+
+    <!--
+    % :relative to the parent element.
+    -->
+    <div class="F">
+        <div class="G"></div>
+    </div>
+  </body>
+</html>

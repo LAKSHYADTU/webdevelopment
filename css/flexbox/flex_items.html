@@ -1,0 +1,104 @@
+<!--
+CHILD ELEMENTS :the direct child 
+-->
+<!--flex item properties-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .A,.B,.C,.D,.E,.F,.G {
+        display: flex;
+        height: 200px;
+        align-items: stretch;
+        background-color: #f1f1f1;
+      }
+      .a,.b,.c,.d,.e,.f,.g {
+        background-color: DodgerBlue;
+        color: white;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    1)order :property specify the order of the flex items.
+            :order value must be a number. default value is 0.
+    -->
+    <div class="A">
+      <div style="order: 3" class="a">A1</div>
+      <div style="order: 2" class="a">A2</div>
+      <div style="order: 4" class="a">A3</div>
+      <div style="order: 1" class="a">A4</div>
+    </div>
+
+
+    <!--
+    2)flex-grow :property specifies how much a flex grow relative to the rest of flex items.
+    -->
+    <div class="B">
+        <div style="flex-grow: 1;" class="b">B1</div>
+        <div style="flex-grow: 1;" class="b">B2</div>
+        <div style="flex-grow: 8;" class="b">B3</div>
+    </div>
+
+
+    <!--
+    3)FLEX SHRINK :property specifies how much a flex item will shrink relative to the rest of flex items.
+    -->
+    <div class="C">
+        <div class="c">C1</div>
+        <div class="c">C2</div>
+        <div style="flex-shrink: 4" class="c">C3</div>
+        <div class="c">C4</div>
+        <div class="c">C5</div>
+        <div class="c">C6</div>
+    </div>
+
+
+    <!--
+    4)FLEX-BASIS :property specifies the initial length of a flex item.
+                 :if content is more than width then using width trim the content while flex-basis incr width itself.
+    -->
+    <div class="D">
+        <div class="d">D1</div>
+        <div class="d">D2</div>
+        <div style="flex-basis: 200px" class="d">D3</div>
+        <div class="d">D4</div>
+    </div>
+
+
+    <!--
+    5)FLEX :property is a shorthand property for flex-grow , flex-shrink and flex-basis.
+    -->
+    <div class="E">
+        <div class="e">E1</div>
+        <div class="e">E2</div>
+        <div style="flex: 0 0 200px" class="e">E3</div>
+        <div class="e">E4</div>
+    </div>
+
+
+    <!--
+    6)ALIGN-SELF :property specifies the alignment for the selected item inside the flexible container.
+                 :align-self property overrides the default alignment set by the container's align-items property.
+    -->
+    <div class="F">
+      <div class="f">F1</div>
+      <div class="f">F2</div>
+      <div style="align-self: center" class="f">F3</div>
+      <div class="f">F4</div>
+    </div>
+    <div class="G">
+      <div class="g">G1</div>
+      <div style="align-self: flex-start" class="g">G2</div>
+      <div style="align-self: flex-end" class="g">G3</div>
+      <div class="g">G4</div>
+    </div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+       /* p{           //ELEMENT SELECTOR  
+            color:red;
+            font-size: larger;
+        } */
+        /* .green{     //class selector
+            color: green;
+        }
+        .blue{
+            color:blue;
+        } */
+
+        /* #first-button{   //class selector
+            color: red;
+        } */
+        button:hover{
+            color: yellow;
+        }
+        .link_color:hover{
+            color: black;
+        }
+        #link_color:hover{
+            color: magenta;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--
+    SELECTOR :points to the html element you want to style.
+             :declaration block contain one or more declarations separated by semicolons.
+             :SYNTAX : a {
+                         color : blue; font-size : 12px; 
+                       }
+             : a is selector , color is property  blue is value.
+    TYPES OF SELECTOR
+    1)SIMPLE SELECTOR :
+    a)ELEMENT / TYPE / TAG SELECTOR : CSS can select HTML element by using element's tag name.
+    b)CLASS SELECTOR :CSS is not limited to selecting element by tag name.
+                     :Html elements having one common attributes is the class attibute.
+    c)ID SELECTOR :
+
+    2)PSEUDO CLASSES SELECTOR :A CSS pseudo class is a keyword added to selector that specifies special state of the selected eleemnts.
+                              :Ex :Change in button's color when the user's pointer hovers over it.
+    
+    3)MULTIPLE / GROUPING SELECTOR :it group the html elements with the same style definitions.
+                                   : EX-  we use it in styling table 
+    -->
+    <p>This is my first paragraph</p>
+    <a class="link_color" href="https://thecodehelp.in">LOVE BABBAR</a>
+    <a id="link_color" href="https://thecodehelp.in">LOVE BABBAR</a>
+    <p class="green">abcd</p>
+    <p class="green">pqrs</p>
+    <p class="blue">xyz</p>
+
+    <button id="first-button">Submit</button>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table , tr , td{
+        border : 1px solid black;
+        border-collapse: collapse;
+        text-align: center;  
+        caption-side: bottom;  
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    TABLE :is used to arrange data into rows and columns.
+          :A table cell can contain text,images,lists,links,other tables,etc.
+          :<thead> :defines the header information for each column in the table.
+          :<th> :represent the heading for a column (by default it is bold and centered).
+          :<tbody> :defines the content of the table.
+          :<tr> :define a row in a table ,<td> :stands for table data for each cell
+          :<tfoot> :defines footer information of the table which gen. gives summary.
+
+    -->
+    <table>
+      <!--table>(tr>td*3)*3-->
+      <tr>
+        <td>sr.no</td>
+        <td>Name</td>
+        <td>login</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>ram</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>shyam</td>
+        <td>no</td>
+      </tr>
+    </table> <br/>
+
+
+    <table border="1">
+      <caption>My First Saving</caption>
+      <thead>
+        <th>Month</th>
+        <th>Savings</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>300</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td>total</td>
+        <td>400</td>
+      </tfoot>
+    </table> <br/>
+
+
+    <table border="1">
+      <tr>
+        <td>Column 1</td>
+        <td>Column 2</td>
+        <td>Column 3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Row 1 Cell 1</td>
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+      </tr>
+      <tr>
+        <td colspan="3">Row 3 Cell 1</td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+    </table> <br/>
+
+    <table border="1">
+      <thead>
+        <th>No.</th>
+        <th>FullName</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Type</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+          <td rowspan="4">Company Founder</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve Jobs</td>
+          <td>Founder Apple</td>
+          <td>$1200</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry Page</td>
+          <td>Founder Google</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zuckerberg</td>
+          <td>Founder Facebook</td>
+          <td>$1300</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Expenses:</td>
+          <td>$4600</td>
+        </tr>
+      </tfoot>
+    </table> <br/>
+
+    
+    <table border="1">
+      <thead>
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Street</th>
+        <th>Male</th>
+        <th>Female</th>
+        <th>Others</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="8">1</td>
+          <td rowspan="4">Kerala</td>
+          <td rowspan="2">Cochin</td>
+          <td>New Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Main Street</td>
+          <td>300</td>
+          <td>288</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Trivandrum</td>
+          <td>Guru Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>TVK Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Maharashtra</td>
+          <td rowspan="2">Mumbai</td>
+          <td>Krisha Street</td>
+          <td>700</td>
+          <td>850</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Main Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Surath</td>
+          <td>NewStreet</td>
+          <td>500</td>
+          <td>600</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Billa Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2">Alaska</td>
+          <td rowspan="2">AKA Central</td>
+          <td>New Street</td>
+          <td>200</td>
+          <td>210</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Cross Street</td>
+          <td>1000</td>
+          <td>1050</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table> <br/>
+
+
+    <table>
+      <tr>
+        <td>Month</td>
+        <td>Amount</td>
+      </tr>
+      <tr>
+        <td>Jan</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Feb</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Mar</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>600</td>
+      </tr>
+    </table> <br/>
+
+    
+    <table>
+      <tr>
+        <td rowspan="2">State of Health</td>
+        <td colspan="2">Fasting Value</td>
+        <td>After Easting</td>
+      </tr>
+      <tr>
+        <td>Minimum</td>
+        <td>Maximum</td>
+        <td>2 hours after eating</td>
+      </tr>
+      <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>Less than 140</td>
+      </tr>
+      <tr>
+        <td>Pre-Diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+      </tr>
+      <tr>
+        <td>Diabetes</td>
+        <td>More than 126</td>
+        <td>N/A</td>
+        <td>More than 200</td>
+      </tr>
+    </table>
+
+  </body>
+</html> <br/>

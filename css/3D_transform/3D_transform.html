@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        .translated{
+            transform: perspective(15px) translateZ(-10px);  /*if there is just 10px then it will zoom out*/
+        }                                    /*perspective is the distance b/w your eyes and z=0 plane.*/
+        .scaled{
+            margin-left: 200px;
+            transform: perspective(350px) scaleZ(5)rotateX(45deg) rotateY(30deg); /*rotation doesn't req perspective*/
+        }  /*translation and scaling req perspective*/
+    </style>
+</head>
+<body>
+    <div class="static">static</div>
+    <div class="translated">translated</div>
+    <div class="scaled">scaled</div>
+</body>
+</html>

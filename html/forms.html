@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    FORMS ELEMENT :is used to create HTML form for user input.
+                  :is container for diff. types of input elements,such as text fields,checkboxes,radio buttons,submit buttons etc.
+                  :following are diff. html form elements
+    INPUT ELEMENT :
+    LABEL ELEMENT :defines labels for several form elements and useful for users.
+                  :also help users who have difficulty clicking on very small regions(radio buttons or checkboxes)-because when user clicks the text within <label>, it toggles the radion button/checkbox.
+                  :for attributr of <label>tag should be eq to id attr of the input element to bind them together.
+    SELECT TAG :
+    TEXTAREA TAG :
+    BUTTON TAG :
+    FIELDSET TAG :
+    LEGEND TAG :
+    DATALIST TAG :
+    OUTPUT TAG :
+    OPTION TAG :
+    OPTGROUP TAG :
+    -->
+
+    <!--
+    ATTRIBUTES ASSOCIATED WITH HTML FORMS: attribute in html are case sensitive.
+    action :specifies where the form data should be sent when the form is submitted.
+    target :specifies where to display the form's attribute.
+    autocomplete :can have value on or off and determine whether the browser should automatically fill in the form.
+    novalidate :specifies that the form should not be validates.
+    method :specifies the HTTP method to use when sending form data.
+    name :specifies name of the form
+    -->
+    <!--
+    HTML INPUT TYPES:
+    -->
+    <form>
+        <label for=""></label>
+        <input type="button">
+        <br>  <br>
+        <!--CHECKBOX-->
+        <label for="checkbox1">English:</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+        <br>  <br>
+        <label for="checkbox2">Hindi</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2">
+
+        <br>  <br>
+        <input type="color">  
+        <br>  <br>
+        <input type="date"> 
+        <br>  <br>
+        <input type="datetime-local">
+        <br>  <br>
+        <input type="email">
+        <br>  <br>
+        <!--FILE-->
+        <label for="fileselect1">Upload</label>
+        <input type="file" name="fileselect1" id="fileselect1">
+        <br>  <br>
+        <input type="hidden">
+        <br>  <br>
+        <!--IMAGE-->
+        <input type="image" name="imageButton1" id="imageButton1" src="button1.png" alt="Click here "> 
+        <br>  <br>
+        <input type="month">
+        <br>  <br>
+        <input type="number">
+        <br>  <br>
+        <input type="password">
+        <br>  <br>
+        <!--RADIO BUTTON-->
+        <label for="radio1">MALE</label>
+        <input type="radio" name="radio1" id="radio1">
+        <br>  <br>
+        <label for="radio2">FEMALE</label>
+        <input type="radio" name="radio2" id="radio2">
+        <br>  <br>
+        <label for="radio3">Prefer not to say</label>
+        <input type="radio" name="radio3" id="radio3">
+        <br>  <br>
+        <input type="range">
+        <br>  <br>
+        <input type="reset">
+        <br>  <br>
+        <input type="search">
+        <br>  <br>
+        <!--SUBMIT-->
+        <label for="button1">Button:</label>
+        <input type="submit" name="button1" id="button1" value="Subscribe">
+        <br>  <br>
+        <input type="tel">
+        <br>  <br>
+        <!--TEXT FIELD-->
+        <label for="textfield1">TextField</label>
+        <input type="text" name="textfield1" id="textfield1">
+        <br>  <br>
+        <input type="time">
+        <br>  <br>
+        <input type="url"> 
+        <br>  <br>
+        <input type="week">
+        <br>  <br>
+    </form>
+    <br/><br>
+
+    <form>
+        <label for="email">Enter Email ID</label>
+        <input type="text" id="email" placeholder="enter your email here"> <!--default width of input field is 20 char-->
+        <br>                           <!--placeholder att is used for highlighted text within input field-->
+        <br>
+        <label for="password">Enter Password</label>
+        <input type="text" id="password">
+        <br>
+        <br>
+        <input type="submit" value="Click here"> <!-- creating button ...Here value is used for the text above the created button-->
+        <button>Click Here</button> <!--creating button or button element-->
+
+
+    </form>
+    <br> <br>
+
+    <form>
+        <fieldset>
+            <legend>HTML Form Dummy</legend>
+            <label for="datepicker">choose Date</label>
+            <input type="date" id="datepicker">
+            <br>
+            <br>
+            <label for="selector1">Choose Your Dish</label>
+            <select name="dishes" id="selector1">     <!--select element-->
+                <option value="maggi">Maggi</option>  <!--option element-->
+                <option value="kurkure">Kurkure</option>
+                <option value="chips">Chips</option>
+            </select>
+            <br>
+            <br>        <!--textarea element-->
+            <textarea name="textArea1" id="textArea1" cols="30" rows="10" placeholder="enter text here...."></textarea>
+            <br>
+            <br>
+        </fieldset>
+
+    </form>
+</body>
+</html>
